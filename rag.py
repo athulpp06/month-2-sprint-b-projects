@@ -61,6 +61,8 @@ def retrieve(question: str, top_k: int = 4):
 
 def answer(question: str, top_k: int = 4):
     sources = retrieve(question, top_k)
+    if not sources:
+        return "No documents found. Please upload a PDF first.", []
     context = "\n\n".join(s["text"] for s in sources)
     prompt = f"Answer only using the context below. If the answer isn't there, say you don't know.\n\nContext:\n{context}\n\nQuestion: {question}"
     client_groq = Groq(api_key=os.getenv("GROQ_API_KEY"))
