@@ -37,8 +37,8 @@ streamlit run frontend.py
 
 ## Live Demo
 
-- **Frontend (Streamlit Cloud):** `<your-streamlit-app-url>`
-- **Backend (Render):** `<your-render-service-url>`
+- **Frontend (Streamlit Cloud):** `https://month-2-sprint-b-projects-pznejltfnnwquw5dqyzq8w.streamlit.app`
+- **Backend (Render):** `https://month-2-sprint-b-projects-hnjr.onrender.com/docs`
 
 ## Deployment Guide
 
